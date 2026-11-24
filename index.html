@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>方法学验证与统计分析 Agent · 公开演示版</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+  <!-- 侧边导航 -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">MV</div>
+      <div><div class="brand-name">方法学验证</div><div class="brand-sub">与统计分析 Agent</div></div>
+    </div>
+    <nav class="nav" id="nav">
+      <a class="nav-item active" data-page="dashboard"><span class="ni">◫</span>驾驶舱</a>
+      <a class="nav-item" data-page="products"><span class="ni">◇</span>产品档案</a>
+      <a class="nav-item" data-page="gaps"><span class="ni">◬</span>差距识别</a>
+      <a class="nav-item" data-page="plans"><span class="ni">▤</span>验证方案</a>
+      <div class="nav-label">分析工具</div>
+      <a class="nav-item" data-page="calc"><span class="ni">∑</span>统计计算器</a>
+      <a class="nav-item" data-page="verdict"><span class="ni">✓</span>符合性判定</a>
+      <a class="nav-item" data-page="report"><span class="ni">▣</span>报告生成</a>
+      <div class="nav-label">知识库</div>
+      <a class="nav-item" data-page="regulations"><span class="ni">§</span>法规依据</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="framework-mini">
+        <div class="fm-label">法规体系</div>
+        <div class="fm-switch">
+          <button class="fw-btn active" data-fw="ivdr">IVDR</button>
+          <button class="fw-btn" data-fw="nmpa">NMPA</button>
+        </div>
+      </div>
+      <div class="ivdr-link" style="font-size:10px;color:#6b7686;line-height:1.5">公开演示版<br>数据均为示例占位符</div>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main class="main">
+    <header class="topbar">
+      <div class="crumb" id="crumb">驾驶舱</div>
+      <div class="topbar-right">
+        <span class="mode-badge">演示数据</span>
+        <span class="top-date" id="topDate"></span>
+      </div>
+    </header>
+
+    <div class="content" id="content"><!-- 动态渲染 --></div>
+  </main>
+</div>
+
+<div class="disclaimer" id="disclaimer"></div>
+<script src="assets/stats.js"></script>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
